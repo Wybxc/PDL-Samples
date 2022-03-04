@@ -1,0 +1,14 @@
+// http://pdl.openjudge.cn/pdlexamples/01/
+
+#input
+    n of int in [1,10^3];
+    k of int in [1,2*10^4];
+    nums of (int in [1,10^4])[1~n];
+
+#required
+    i of int in [1,n];
+    j of int in [i+1,n];
+    nums[i]+nums[j] = k;
+
+#output
+    nums[i]*nums[j];

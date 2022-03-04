@@ -1,0 +1,13 @@
+// http://pdl.openjudge.cn/pdlexamples/03/
+
+#input
+    n of int in [1,100];
+    cohesion of (int in [-50,50])[1~n];
+    capacity of (int in [-50,50])[1~n];
+
+#required
+    team of (int in [1,n]){};
+    summation [cohesion[i]: forall i (i in team)] > 0;
+
+#objective
+    maximize summation [capacity[i]: forall i (i in team)];

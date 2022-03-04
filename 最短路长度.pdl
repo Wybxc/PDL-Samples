@@ -1,0 +1,14 @@
+// http://pdl.openjudge.cn/ai2022/C/
+
+#input
+    n of int in [1,100];
+    dis of (int in [0,1000])[1~n][1~n];
+
+#required
+    len of int in [1,n];
+    path of (int in [1,n]) [1~len];
+    path[1] = 1;
+    path[len] = n;
+
+#objective
+    minimize summation [ dis[path[i]][path[i+1]]: forall i ];

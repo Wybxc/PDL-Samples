@@ -1,0 +1,12 @@
+// http://pdl.openjudge.cn/pdlexamples/02/
+
+#input
+    n of int in [1,10];
+    dis of (int in [0, 1000])[1~n][1~n];
+
+#required
+    path of (int in [1,n])[1~n];
+    alldiff path;
+
+#objective
+    minimize summation [dis[path[i]][path[i+1]]: forall i];

@@ -1,0 +1,15 @@
+// http://pdl.openjudge.cn/ai2022/B/
+
+#input
+    y1 of int in [1,8];
+    y2 of int in [1,8];
+
+#required
+    y of (int in [1,8])[1~8];
+    y[1] = y1;
+    y[2] = y2;
+    alldiff y;
+    i-j != y[i]-y[j] and i-j != y[j]-y[i]: forall (i,j) (i != j);
+
+#output
+    y;
